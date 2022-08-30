@@ -1,5 +1,7 @@
-letter = input("Please input a letter that you want to check a palindrome : ") 
+text = input("Please input a letter that you want to check a palindrome : ") 
+letter = text.lower()
+#print (letter)
 if(letter == letter[::-1]):  
-    print("The letter", letter,"is a palindrome.")  
+    print("The letter", text,"is a palindrome.")  
 else:  
-    print("The letter", letter,"is not a palindrome.") 
+    print("The letter", text,"is not a palindrome.")
