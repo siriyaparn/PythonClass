@@ -1,5 +1,5 @@
 print('{0} and {1}'.format('Geeks', 'Portal'))
 print('{1} and {0}'.format('Geeks', 'Portal'))
-#print('Number one portal is {0}, {1}, and {other}.'.format('Geeks','For',other = 'Geeks'))
+print('Number one portal is {0}, {1}, and {other}.'.format('Geeks','For',other = 'Geeks'))
 print('Geeks : {0:2d}, Portal : {1:8.2f}'.format(12,00.546))
 print('Second argumant: {1:3d}, first one: {0:7.2f}'.format(47.42,11))
