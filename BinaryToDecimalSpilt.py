@@ -18,7 +18,7 @@ for i in total_sort:                                            #ตรวจส
         for i in binary:
             if (i == "."):                                              #เงื่อนไขแบบมีจุด
                 B1,B2 = binary.split(".")
-                total = B1 + B2
+                total = B1 + B2 
                 total_int = int(total)
                 print(type(total_int))
                 total_sort = sorted(total,reverse = True)
