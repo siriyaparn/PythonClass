@@ -7,14 +7,15 @@ Original file is located at
     https://colab.research.google.com/drive/164Sq5iv7duD2x8lFIv_B5Ew2zMOG99N_
 """
 
-L = list(range(2))
-i = 0
-n = int(input("What term of the Fibonacci sequence do you want? : "))
+def CreateFibonacci (L):
+    L = list(range(2))
+    i = 0
+    while i < n-2 :
+        Lnext = L[0+i]+L[1+i]
+        L.append(Lnext)
+        i = i + 1
+    return(L)
 
-while i < n-2 :
-    Lnext = L[0+i]+L[1+i]
-    L.append(Lnext)
-    i = i + 1
-        
-print(L)
-#len(L)
+n = int(input("What term of the Fibonacci sequence do you want? : "))  
+output = CreateFibonacci(n)
+print(output)
