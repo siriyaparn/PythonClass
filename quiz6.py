@@ -7,15 +7,18 @@ Original file is located at
     https://colab.research.google.com/drive/1-Uoznrgttu9XVHcrDDhNDGYY_R3iqjNv
 """
 
-morse = {'A':'.-', 'B':'-...', 'C':'-.-.', 'D':'-..', 'E':'.', 'F':'..-.', 'G':'--.', 'H':'....', 'I':'..', 
+def CreateMorseCode(text):
+  morse = {'A':'.-', 'B':'-...', 'C':'-.-.', 'D':'-..', 'E':'.', 'F':'..-.', 'G':'--.', 'H':'....', 'I':'..', 
          'J':'.---', 'K':'-.-', 'L':'.-..', 'M':'--', 'N':'-.', 'O':'---', 'P':'.--.', 'Q':'--.-', 'R':'.-.', 
          'S':'...', 'T':'-', 'U':'..-','V':'...-', 'W':'.--', 'X':'-..-', 'Y':'-.--', 'Z':'--..','1':'.----', 
          '2':'..---', '3':'...--', '4':'....-', '5':'.....', '6':'-....', '7':'--...', '8':'---..', '9':'----.', '0':'-----'}
 
+  code = ""
+  for c in text:
+    code += morse[c] + " "
+  return (code)
 
-text = input("What text do you want to translate to morse code? : ")
-text = text.upper()
-code = ""
-for c in text:
-  code += morse[c] + " "
-print(code)
+meassage = input("What text do you want to translate to morse code? : ")
+meassage = meassage.upper()
+output = CreateMorseCode(meassage)
+print("The morse code of thid text is ", output)
