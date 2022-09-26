@@ -12,8 +12,27 @@ x = x.lower()
 #a = True
 #b = True
 
-def f(a,b):
-  return(eval(x))
+def AND (a,b):
+  if a == 1 and b == 1 :
+    return(True)
+  else :
+    return (False)
+
+def OR (a,b):
+  if a == 0 and b == 0 :
+    return (False)
+  else :
+    return (True)
+
+def NOT (a):
+  if a == 0 :
+    return (True)
+  elif a == 1 :
+    return (False)
+  elif b == 0  :
+    return (True)
+  elif b == 1 :
+    return (False)
 
 print("The Truth Table")
 print("------------------------------------------------------------------")
